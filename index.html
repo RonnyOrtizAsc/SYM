@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[ NOMBRE DE LA EMPRESA ] | Construcción, remodelación e infraestructura en El Salvador</title>
+<meta name="description" content="Empresa familiar salvadoreña de construcción, remodelación e infraestructura de redes. Proyectos ejecutados en El Salvador, Guatemala, Honduras y República Dominicana desde 2015.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[ NOMBRE DE LA EMPRESA ] | Construcción, remodelación e infraestructura">
+<meta property="og:description" content="Experiencia desde 2015 en cuatro países.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#1F5A3A;--verde-osc:#16442B;--rojo:#8F2929;--carbon:#202322;--gris:#F3F4F1;--linea:#DADDD6;--t2:#555B58;
+--f1:"Archivo","Arial Narrow",Arial,sans-serif;--f2:"Public Sans",system-ui,Arial,sans-serif;--pad:clamp(20px,5vw,56px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--f2);color:var(--carbon);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--f1);line-height:1.08;font-weight:800;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,4vw,3rem);max-width:20ch}
+p{max-width:60ch}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--pad)}
+section{padding:clamp(64px,9vw,112px) 0}
+.alt{background:var(--gris)}.dark{background:var(--carbon);color:#EDEFEA}
+.lead{color:var(--t2);margin-top:16px}.dark .lead{color:#C5CAC5}
+:focus-visible{outline:3px solid var(--rojo);outline-offset:3px}
+.btn{display:inline-block;padding:13px 24px;background:var(--verde);color:#fff;text-decoration:none;font-weight:600;font-size:.93rem;border:0;cursor:pointer;font-family:var(--f2);transition:background .2s}
+.btn:hover{background:var(--verde-osc)}
+
+/* PLACEHOLDER: para foto real use <div class="ph"><img src="foto.jpg" alt="..."></div> */
+.ph{position:relative;overflow:hidden;border:1px solid var(--linea);background:linear-gradient(rgba(31,90,58,.07) 1px,transparent 1px) 0 0/32px 32px,linear-gradient(90deg,rgba(31,90,58,.07) 1px,transparent 1px) 0 0/32px 32px,#E7EAE4}
+.ph::before{content:"[ " attr(data-label) " ]";position:absolute;left:18px;bottom:16px;font-family:var(--f1);font-weight:500;font-size:.85rem;color:var(--verde)}
+.ph::before{right:56px}
+.ph::after{content:"";position:absolute;top:14px;right:14px;width:22px;height:22px;border-top:2px solid var(--rojo);border-right:2px solid var(--rojo);opacity:.7}
+.slide .ph img{object-position:50% 62%}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--linea)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--f1);font-weight:800;font-size:.95rem;line-height:1.1}
+.lb{width:40px;height:40px;border:2px solid var(--verde);display:grid;place-items:center;font-size:.58rem;color:var(--verde);position:relative;overflow:hidden}
+.lb::after{content:"";position:absolute;right:0;bottom:0;width:9px;height:9px;background:var(--rojo)}
+.lb img{width:100%;height:100%;object-fit:contain}
+nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+nav a{text-decoration:none;font-size:.92rem;font-weight:500;border-bottom:2px solid transparent;padding:6px 0;transition:border-color .2s}
+nav a:hover{border-color:var(--rojo)}
+nav .btn{padding:10px 18px;font-size:.87rem;border:0}
+.burger{display:none;background:none;border:1.5px solid var(--carbon);width:44px;height:44px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger i{width:20px;height:2px;background:var(--carbon);transition:transform .25s,opacity .2s}
+.burger[aria-expanded=true] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] i:nth-child(2){opacity:0}
+.burger[aria-expanded=true] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.hero{position:relative;min-height:calc(100svh - 68px);display:flex;align-items:flex-end;padding:0;color:#fff;background:linear-gradient(135deg,#2A3A31,#1B1F1D);overflow:hidden}
+.hero>.ph{position:absolute;inset:0;border:0;background:none}
+.hero>.ph::after{display:none}.hero>.ph::before{left:auto;right:var(--pad);color:#A8C9B6}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,18,16,.8),rgba(15,18,16,.15))}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:100px;padding-bottom:clamp(36px,7vw,72px)}
+.hero h1{font-size:clamp(2.8rem,8.5vw,7rem);max-width:12ch;letter-spacing:-.025em}
+.hero p{margin-top:20px;font-family:var(--f1);font-weight:500;font-size:clamp(1rem,2vw,1.3rem)}
+.hero small{display:flex;align-items:center;gap:12px;margin-top:8px;color:#C5CAC5;font-size:.93rem}
+.hero small::before{content:"";width:34px;height:2px;background:var(--rojo)}
+
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px)}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:2px solid var(--carbon)}
+.nums div{padding:24px 16px 0 0}
+.nums b{display:block;font-family:var(--f1);font-weight:800;font-size:clamp(2.4rem,5vw,4rem);line-height:1;color:var(--verde)}
+.nums span{display:block;margin-top:8px;color:var(--t2);font-size:.92rem}
+
+/* CARRUSEL */
+.car{position:relative}
+.car-v{overflow:hidden;touch-action:pan-y}
+.car-t{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.car-t>*{flex:0 0 100%;min-width:0}
+.slide{display:block;width:100%;border:0;background:none;padding:0;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.slide .ph{aspect-ratio:16/8;transition:filter .3s}
+.slide:hover .ph{filter:brightness(.95)}
+.cap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0 0;flex-wrap:wrap}
+.cap b{font-family:var(--f1);font-size:1.2rem}.cap span{color:var(--t2);font-size:.92rem}
+.cap em{font-style:normal;font-weight:600;color:var(--verde);font-size:.92rem;border-bottom:2px solid var(--rojo)}
+.cb{position:absolute;top:calc(50% - 30px);width:46px;height:46px;border:0;background:#fff;color:var(--carbon);font-size:1.4rem;cursor:pointer;z-index:3;transition:background .2s,color .2s}
+.cb:hover{background:var(--verde);color:#fff}.cb.p{left:0}.cb.n{right:0}
+.cd{display:flex;gap:8px;margin-top:18px;align-items:center}
+.cd button{width:30px;height:4px;border:0;background:var(--linea);cursor:pointer;padding:0;transition:background .2s,width .2s}
+.cd button[aria-current=true]{background:var(--rojo);width:46px}
+.cc{margin-left:auto;font-size:.85rem;color:var(--t2)}
+
+.srv{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;border-top:2px solid var(--carbon)}
+.srv div{padding:24px 24px 0 0}
+.srv h3{font-size:1.15rem;margin-bottom:8px}.srv p{font-size:.94rem;color:var(--t2)}
+.note{margin-top:36px;padding-left:16px;border-left:2px solid var(--rojo);font-size:.95rem;color:var(--t2)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,80px);align-items:center}
+.two .ph{aspect-ratio:4/3}
+.paises{display:flex;flex-wrap:wrap;gap:8px 32px;margin-top:28px;padding-top:20px;border-top:1px solid var(--carbon);font-family:var(--f1);font-weight:700}
+
+.vals{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;border-top:2px solid var(--carbon)}
+.vals div{padding:24px 24px 0 0}
+.vals h3{font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;color:var(--verde);margin-bottom:8px}
+.vals p{font-size:.94rem;color:var(--t2)}
+.cli{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+.cli div{width:200px;aspect-ratio:3/2;display:grid;place-items:center;text-align:center;border:1px dashed #B8BDB5;color:#8A908C;font-size:.82rem}
+.cli .ok{border:1px solid var(--carbon);color:var(--carbon);font-family:var(--f1);font-weight:800;font-size:1.5rem}
+
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,6vw,90px)}
+.cd2{list-style:none;margin-top:28px;border-top:1px solid #4A504C}
+.cd2 li{padding:12px 0;border-bottom:1px solid #4A504C;display:flex;justify-content:space-between;gap:12px;font-size:.95rem}
+.cd2 span{color:#A8AFAA}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.full{grid-column:1/-1}
+label{font-size:.84rem;font-weight:600;display:block;margin-bottom:5px;color:#DDE1DC}
+input,select,textarea{width:100%;padding:12px 14px;font:inherit;font-size:.95rem;background:#2C302E;border:1px solid #4A504C;color:#fff;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:2px solid #8FC2A5}
+textarea{min-height:110px;resize:vertical}
+form .btn{background:var(--rojo);justify-self:start;letter-spacing:.04em}form .btn:hover{background:#731F1F}
+#fs{font-size:.9rem;color:#A8C9B6;min-height:1.4em}
+footer{background:#161918;color:#A8AFAA;padding:30px 0;font-size:.87rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+.checks{list-style:none;margin-top:20px;border-top:1px solid var(--linea)}
+.checks li{padding:11px 0;border-bottom:1px solid var(--linea);font-size:.96rem;break-inside:avoid}
+.checks.cols{columns:2;column-gap:56px}
+.fe{margin-top:40px;padding-left:16px;border-left:2px solid var(--rojo);font-size:.88rem;color:var(--t2);max-width:60ch}
+@media(max-width:900px){.checks.cols{columns:1}}
+/* PROYECTO ABIERTO */
+dialog{border:0;width:min(1040px,94vw);max-height:92vh;margin:auto;padding:0;background:#fff;color:var(--carbon);overflow:auto}
+dialog::backdrop{background:rgba(15,18,16,.78)}
+.dg{padding:clamp(20px,4vw,40px)}
+.dx{position:sticky;top:0;float:right;z-index:5;width:44px;height:44px;border:0;background:var(--carbon);color:#fff;font-size:1.4rem;cursor:pointer}
+.dg h3{font-size:clamp(1.5rem,3vw,2.2rem);margin:18px 0 12px}
+.dg .ph{aspect-ratio:16/9}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;font-size:.92rem;margin:18px 0;padding:14px 0;border-block:1px solid var(--linea)}
+.meta dt{color:var(--t2)}.meta dd{font-weight:500}
+
+@media(max-width:900px){
+.burger{display:flex}
+nav{position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--linea);display:none;padding:8px var(--pad) 22px}
+nav.open{display:block}nav ul{flex-direction:column;align-items:stretch;gap:0}
+nav li a{display:block;padding:14px 0;border-bottom:1px solid var(--linea)}nav .btn{margin-top:14px;text-align:center}
+.intro,.two,.contact{grid-template-columns:1fr}
+.nums,.srv,.vals{grid-template-columns:1fr 1fr}
+.slide .ph{aspect-ratio:4/3}
+}
+@media(max-width:520px){body{font-size:16px}form{grid-template-columns:1fr}.cb{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.hero .ph::before{display:none}
+.hero .ph img{opacity:0;transition:opacity 1.2s ease}
+.hero .ph img.on{opacity:1}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <!-- LOGO: reemplace el contenido de .lb por <img src="logo.svg" alt="Logo"> -->
+  <a class="logo" href="#inicio"><div class="lb">LOGO</div><span data-c="nombre">[ NOMBRE DE LA EMPRESA ]</span></a>
+  <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+  <nav id="menu" aria-label="Principal"><ul>
+    <li><a href="#proyectos">Proyectos</a></li><li><a href="#hacemos">Qué hacemos</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a class="btn" href="#contacto">Hablar sobre un proyecto</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="ph">
+    <img class="on" src="recursos/proyectos/p1.jpg" alt="Fachada de local comercial terminada, vista nocturna" style="object-position:50% 62%">
+    <img src="recursos/proyectos/p4.jpg" alt="Fachada de local comercial terminada" style="object-position:50% 70%">
+  </div>
+  <div class="wrap"><h1>Construimos. Resolvemos. Cumplimos.</h1>
+  <p>Construcción · Remodelación · Infraestructura</p><small>Experiencia desde 2015 · El Salvador</small><a class="btn" href="#proyectos" style="margin-top:32px">Ver proyectos</a></div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="intro">
+      <h2>La experiencia se demuestra en el trabajo.</h2>
+      <p class="lead" style="margin-top:0">Desde 2015 ejecutamos construcción, remodelaciones e infraestructura de redes: desde viviendas y restaurantes hasta oficinas, centros comerciales y proyectos de gran escala.</p>
+    </div>
+    <div class="nums">
+      <div><b>2015</b><span>Inicio de operaciones</span></div>
+      <div><b>20+</b><span>Colaboradores permanentes</span></div>
+      <div><b>4</b><span>Países con proyectos ejecutados</span></div>
+      <div><b>10+</b><span>Años de experiencia</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos" class="alt">
+  <div class="wrap">
+    <h2>El trabajo habla por nosotros.</h2>
+    <p class="lead" style="margin-bottom:40px">Toque una foto para ver el proyecto.</p>
+    <div class="car" id="main-car" aria-roledescription="carrusel" aria-label="Proyectos"></div>
+  </div>
+</section>
+
+<section id="hacemos">
+  <div class="wrap">
+    <h2>Qué hacemos.</h2>
+    <div class="srv">
+      <div><h3>Construcción</h3><p>Obra civil, estructuras, fundaciones, ampliaciones, galeras y movimiento de tierra.</p></div>
+      <div><h3>Remodelación</h3><p>Transformación de oficinas, restaurantes, locales y viviendas existentes.</p></div>
+      <div><h3>Infraestructura y redes</h3><p>Cableado estructurado, racks, access points y data centers.</p></div>
+      <div><h3>Instalaciones y acabados</h3><p>Electricidad, plomería, pintura, carpintería, soldadura y portones.</p></div>
+    </div>
+    <p class="note">Vehículos propios de trabajo y transporte de personal. Maquinaria pesada, grúas y operadores se contratan según la obra, y coordinamos arquitectos e ingenieros cuando el proyecto los necesita.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap two">
+    <div>
+      <h2>Infraestructura que debe funcionar.</h2>
+      <p class="lead">En data centers y redes no basta con instalar. El cableado y los racks se entregan ordenados, limpios y funcionando. Y cuando en la obra algo no sale según el plan, evaluamos, resolvemos y ejecutamos.</p>
+    </div>
+    <div class="ph" data-label="Foto real: racks y cableado"></div>
+  </div>
+</section>
+
+<section id="nosotros">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <h2>Proyectos ejecutados físicamente en cuatro países.</h2>
+        <p class="lead" style="margin-bottom:8px">Más de 20 colaboradores permanentes: albañilería, soldadura, electricidad, plomería, pintura, carpintería y supervisión.</p><div class="paises"><span>El Salvador</span><span>Guatemala</span><span>Honduras</span><span>República Dominicana</span></div>
+      </div>
+      <div class="ph" data-label="Foto real del equipo"></div>
+    </div>
+    <div class="vals">
+      <div><h3>Honestidad</h3><p>Transparencia en avances, costos y problemas.</p></div>
+      <div><h3>Integridad</h3><p>La confianza del cliente es parte del trabajo.</p></div>
+      <div><h3>Responsabilidad</h3><p>Cumplimos lo que asumimos.</p></div>
+      <div><h3>Servicio</h3><p>Soluciones prácticas para que el proyecto avance.</p></div>
+    </div>
+    <p class="fe">Porque de tal manera amó Dios al mundo, que ha dado á su Hijo unigénito, para que todo aquel que en él creyere, no se pierda, mas tenga vida eterna. · Juan 3:16</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Empresas que han confiado en nuestro trabajo.</h2>
+    <div class="cli"><div class="ok">Grupo Q</div><div>[ CLIENTE / LOGO ]</div><div>[ CLIENTE / LOGO ]</div></div>
+  </div>
+</section>
+
+<section id="contacto" class="dark">
+  <div class="wrap contact">
+    <div>
+      <h2>Hablar sobre un proyecto.</h2>
+      <p class="lead">Cuéntenos qué necesita y le respondemos.</p>
+      <ul class="cd2">
+        <li><span>Teléfono</span><b data-c="tel">[ TELÉFONO ]</b></li>
+        <li><span>WhatsApp</span><b data-c="wa">[ WHATSAPP ]</b></li>
+        <li><span>Correo</span><b data-c="mail">[ CORREO ]</b></li>
+      </ul>
+    </div>
+    <form id="form" novalidate>
+      <div><label for="n">Nombre</label><input id="n" name="Nombre" autocomplete="name"></div>
+      <div><label for="e">Empresa</label><input id="e" name="Empresa" autocomplete="organization"></div>
+      <div><label for="t">Teléfono / WhatsApp</label><input id="t" name="Teléfono" type="tel"></div>
+      <div><label for="c">Correo</label><input id="c" name="Correo" type="email" autocomplete="email"></div>
+      <div class="full"><label for="tp">Tipo de proyecto</label><select id="tp" name="Tipo"><option>Construcción</option><option>Remodelación</option><option>Infraestructura y redes</option><option>Otro</option></select></div>
+      <div class="full"><label for="m">Cuéntanos sobre el proyecto</label><textarea id="m" name="Mensaje"></textarea></div>
+      <button class="btn" type="submit">ENVIAR SOLICITUD</button><p id="fs" class="full" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© <span id="yr"></span> <span data-c="nombre">[ NOMBRE DE LA EMPRESA ]</span> · El Salvador</span><span>Construcción, remodelación e infraestructura</span></div></footer>
+
+<dialog id="dlg" aria-label="Proyecto"><div class="dg"><button class="dx" aria-label="Cerrar">&times;</button><div id="dc"></div></div></dialog>
+
+<script>
+/* ===== CONFIGURACIÓN ===== */
+const CONFIG = {
+  nombre:"SERVICIOS Y MÁS",
+  tel:"0000 0000", whatsapp:"" /* solo números con código, ej. 50300000000 */, correo:"CORREO@GMAIL.COM",
+  segundos: 5   // cada cuántos segundos cambia el carrusel principal
+};
+/* PROYECTOS: en "fotos" ponga rutas de imágenes. La primera es la portada del carrusel principal. */
+const FOTOS = [
+  ["recursos/proyectos/p1.jpg"],
+  ["recursos/proyectos/p2.jpg"],
+  ["recursos/proyectos/p3.jpg"],
+  ["recursos/proyectos/p4.jpg"]
+];
+const PROYECTOS = [1,2,3,4,5].map((_, i) => ({
+  nombre:"[Nombre del proyecto]", tipo:"[Tipo]", ubicacion:"[Ubicación]", anio:"[Año]", duracion:"[Duración]",
+  descripcion:"[Descripción breve: qué se hizo y cuál fue el resultado.]", alcance:"[Alcance]", fotos:FOTOS[i]||[]
+}));
+
+/* ===== Código ===== */
+const $=(s,r=document)=>r.querySelector(s), esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("#yr").textContent=new Date().getFullYear();
+document.querySelectorAll('[data-c=nombre]').forEach(e=>e.textContent=CONFIG.nombre);
+if(CONFIG.tel)document.querySelectorAll('[data-c=tel]').forEach(e=>e.textContent=CONFIG.tel);
+if(CONFIG.whatsapp)document.querySelectorAll('[data-c=wa]').forEach(e=>e.textContent="+"+CONFIG.whatsapp);
+if(CONFIG.correo)document.querySelectorAll('[data-c=mail]').forEach(e=>e.textContent=CONFIG.correo);
+
+const burger=$(".burger"),menu=$("#menu");
+const setMenu=o=>{menu.classList.toggle("open",o);burger.setAttribute("aria-expanded",o);burger.setAttribute("aria-label",o?"Cerrar menú":"Abrir menú")};
+burger.onclick=()=>setMenu(!menu.classList.contains("open"));
+menu.querySelectorAll("a").forEach(a=>a.onclick=()=>setMenu(false));
+
+// Carrusel genérico: con o sin avance automático
+function carousel(root,{auto=0}={}){
+  const t=$(".car-t",root),n=t.children.length,dots=root.querySelectorAll(".cd button"),cnt=$(".cc",root);
+  let i=0,timer=null,paused=false;
+  const go=k=>{i=(k+n)%n;t.style.transform=`translateX(${-100*i}%)`;
+    dots.forEach((d,j)=>j===i?d.setAttribute("aria-current","true"):d.removeAttribute("aria-current"));
+    if(cnt)cnt.textContent=`${i+1} / ${n}`};
+  if(n<2)return;
+  const start=()=>{stop();if(auto&&!matchMedia("(prefers-reduced-motion:reduce)").matches)timer=setInterval(()=>{if(!paused&&!document.hidden)go(i+1)},auto*1000)};
+  const stop=()=>clearInterval(timer);
+  $(".p",root).onclick=()=>{go(i-1);start()};$(".n",root).onclick=()=>{go(i+1);start()};
+  dots.forEach((d,j)=>d.onclick=()=>{go(j);start()});
+  root.addEventListener("mouseenter",()=>paused=true);root.addEventListener("mouseleave",()=>paused=false);
+  root.addEventListener("focusin",()=>paused=true);root.addEventListener("focusout",()=>paused=false);
+  root.addEventListener("keydown",e=>{if(e.key==="ArrowLeft"){go(i-1);start()}if(e.key==="ArrowRight"){go(i+1);start()}});
+  let x0=null,y0=null;const v=$(".car-v",root);
+  v.addEventListener("touchstart",e=>{x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+  v.addEventListener("touchend",e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
+    if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){go(dx<0?i+1:i-1);start()}x0=null});
+  start();
+}
+const controls=n=>n>1?`<button class="cb p" aria-label="Anterior">&#8249;</button><button class="cb n" aria-label="Siguiente">&#8250;</button>
+ <div class="cd">${Array.from({length:n},(_,k)=>`<button aria-label="Ir a ${k+1}" ${k?"":'aria-current="true"'}></button>`).join("")}<span class="cc">1 / ${n}</span></div>`:"";
+const num=i=>String(i+1).padStart(2,"0");
+const GUIA=["Portada: obra terminada, horizontal","Antes o durante la obra","Detalle de acabados","Otra vista del resultado"];
+const photo=(p,k,i)=>p.fotos[k]?`<div class="ph"><img src="${esc(p.fotos[k])}" alt="${esc(p.nombre)}" loading="lazy"></div>`:`<div class="ph" data-label="Proyecto ${num(i)} · Foto ${k+1}: ${GUIA[k]||"Otra vista"}"></div>`;
+
+// Carrusel principal: una portada por proyecto
+const mc=$("#main-car");
+mc.innerHTML=`<div class="car-v"><div class="car-t">${PROYECTOS.map((p,i)=>`
+ <div><button class="slide" data-i="${i}" aria-label="Ver proyecto ${num(i)}: ${esc(p.nombre)}">${photo(p,0,i)}
+ <div class="cap"><div><b>${esc(p.nombre)}</b><br><span>${esc(p.tipo)} · ${esc(p.ubicacion)} · ${esc(p.anio)}</span></div><em>Ver proyecto</em></div></button></div>`).join("")}</div></div>${controls(PROYECTOS.length)}`;
+carousel(mc,{auto:CONFIG.segundos});
+
+// Proyecto abierto con su galería
+const dlg=$("#dlg"),dc=$("#dc");
+mc.addEventListener("click",e=>{
+  const b=e.target.closest(".slide");if(!b)return;
+  const i=+b.dataset.i,p=PROYECTOS[i],n=Math.max(p.fotos.length,4);
+  dc.innerHTML=`<div class="car"><div class="car-v"><div class="car-t">${Array.from({length:n},(_,k)=>`<div>${photo(p,k,i)}</div>`).join("")}</div></div>${controls(n)}</div>
+  <h3>${esc(p.nombre)}</h3><p>${esc(p.descripcion)}</p>
+  <dl class="meta"><dt>Tipo</dt><dd>${esc(p.tipo)}</dd><dt>Ubicación</dt><dd>${esc(p.ubicacion)}</dd><dt>Año</dt><dd>${esc(p.anio)}</dd><dt>Duración</dt><dd>${esc(p.duracion)}</dd></dl>
+  <p style="color:var(--t2);font-size:.93rem">${esc(p.alcance)}</p>`;
+  carousel($(".car",dc));dlg.showModal();
+});
+$(".dx").onclick=()=>dlg.close();
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+
+// Formulario
+$("#form").addEventListener("submit",e=>{
+  e.preventDefault();const f=e.target,st=$("#fs");
+  if(!f.Nombre.value.trim()||!f.Mensaje.value.trim()){st.textContent="Complete al menos su nombre y la descripción del proyecto.";return}
+  const txt=["Nombre","Empresa","Teléfono","Correo","Tipo","Mensaje"].map(k=>`${k}: ${f[k].value}`).join("\n");
+  if(CONFIG.whatsapp){open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(txt)}`,"_blank");st.textContent="Se abrió WhatsApp con su solicitud."}
+  else if(CONFIG.correo){location.href=`mailto:${CONFIG.correo}?subject=${encodeURIComponent("Solicitud de proyecto")}&body=${encodeURIComponent(txt)}`}
+  else st.textContent="Formulario listo. Falta configurar WhatsApp o correo en CONFIG.";
+});
+
+// Hero: cambia entre las fotos
+const heroImgs=document.querySelectorAll(".hero .ph img");
+if(heroImgs.length>1&&!matchMedia("(prefers-reduced-motion:reduce)").matches){
+  let h=0;
+  setInterval(()=>{heroImgs[h].classList.remove("on");h=(h+1)%heroImgs.length;heroImgs[h].classList.add("on")},6000);
+}
+</script>
+</body>
+</html>
